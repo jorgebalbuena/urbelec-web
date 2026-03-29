@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urbelec Servicios Eléctricos</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;scroll-behavior:smooth}
+
+body{
+    margin:0;
+    font-family:'Montserrat',sans-serif;
+    color:#fff;
+    background:url('fondo_torres.jpg') no-repeat center center fixed;
+    background-size:cover;
+}
+
+/* capa oscura para que el texto se vea bien */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.75);
+    z-index:-1;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.8);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 30px;
+    z-index:1000;
+    border-bottom:2px solid #f1c40f;
+}
+nav a{color:#fff;text-decoration:none;margin:0 10px;font-weight:600}
+nav a:hover{color:#f1c40f}
+
+/* HERO */
+.hero{
+    padding-top:120px;
+    text-align:center;
+}
+
+.logo img{
+    width:200px;
+    display:block;
+    margin:auto;
+    background:transparent;
+    mix-blend-mode:normal; /* mantiene transparencia real */
+}
+
+.sub{
+    color:#f1c40f;
+    margin-top:10px;
+}
+
+.section{
+    padding:60px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.card{
+    background:rgba(20,20,20,0.9);
+    padding:20px;
+    border-radius:8px;
+    border-top:4px solid #f1c40f;
+    backdrop-filter:blur(5px);
+}
+
+h2{margin-bottom:10px}
+
+ul{list-style:none;padding:0}
+li{padding:8px 0;border-bottom:1px solid #333}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+}
+th,td{
+    padding:10px 12px;
+    border-bottom:1px solid #333;
+    text-align:left;
+    vertical-align:middle;
+}
+th{
+    color:#f1c40f;
+    font-weight:700;
+}
+th:nth-child(1), td:nth-child(1){width:50%;}
+th:nth-child(2), td:nth-child(2){width:30%;}
+th:nth-child(3), td:nth-child(3){width:20%;}
+
+/* CONTACT */
+.contact a{color:#f1c40f;text-decoration:none}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25d366;
+    color:#fff;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.8);
+    border-top:2px solid #f1c40f;
+    margin-top:30px;
+}
+
+@media(max-width:800px){
+.grid{grid-template-columns:1fr}
+nav{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div><b>URBELEC</b></div>
+<div>
+<a href="#inicio">Inicio</a>
+<a href="#servicios">Servicios</a>
+<a href="#obras">Obras</a>
+<a href="#contacto">Contacto</a>
+</div>
+</nav>
+
+<section id="inicio" class="hero">
+<div class="logo">
+<img src="logo_urbelec.png" alt="logo">
+</div>
+<div class="sub">SERVICIOS ELÉCTRICOS</div>
+</section>
+
+<section id="servicios" class="section">
+<h2>NUESTROS SERVICIOS</h2>
+<div class="grid">
+<div class="card">
+<ul>
+<li>Instalaciones Eléctricas</li>
+<li>Iluminación Industrial</li>
+<li>Mantenimiento</li>
+<li>proyectos y ejecucion de distribucion subterranea  y aerea en loteos y conjuntos de vivienda</li>
+<li>ejecucion de instalaciones de obras publicas, escuelas , edificios gubernamentales de diferente tipos</li>
+<li>iluminacion de calle e instituciones deportibas</li>
+<li>lineas rurales</li>
+</ul>
+</div>
+<div class="card">
+<p>Brindamos soluciones eléctricas profesionales para industrias, comercios y hogares.</p>
+</div>
+</div>
+</section>
+
+<section id="obras" class="section">
+<h2>OBRAS REALIZADAS</h2>
+<table>
+<tr><th>Proyecto</th><th>Ubicación</th><th>Año</th></tr>
+<tr><td>Planta Industrial</td><td>Buenos Aires</td><td>2023</td></tr>
+<tr><td>Shopping</td><td>Córdoba</td><td>2022</td></tr>
+</table>
+</section>
+
+<section id="contacto" class="section contact">
+<h2>CONTACTO</h2>
+<p>📞 +54 9 3435109911</p>
+<p>✉️ urbelec@yahoo.com.ar</p>
+<p>Parana Entre Rios Argentina</p>
+<p><a href="#">WhatsApp directo</a></p>
+</section>
+
+<a class="whatsapp" href="#">⚡</a>
+
+<div class="footer">URBELEC © 2026</div>
+
+</body>
+</html>
